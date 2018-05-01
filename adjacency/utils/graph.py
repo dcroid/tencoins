@@ -32,7 +32,7 @@ class Graph:
             self.re_name(data['name'])
             self.num += 1
             path = [int(id) for id in root_path.split("|")[:-1]]
-            yield {'name': data['name'], 'id': self.num, 'father': father, 'path': str(path)}
+            yield {'name': data['name'], 'local_id': self.num, 'father': father, 'path': str(path)}
 
         if 'children' in data:
 

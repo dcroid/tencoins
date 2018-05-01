@@ -18,8 +18,7 @@ from adjacency.views import CatalogView
 from django.urls import path
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('create/', CatalogView.as_view(), name='create_family'),
+    path('categories/', CatalogView.as_view(), name='create_family'),
     path('categories/', CatalogView.as_view(), name='get_family'),
     path('categories/<int:id>/', CatalogView.as_view(), name='get_family')
 ]

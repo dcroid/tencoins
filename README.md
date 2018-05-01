@@ -1,10 +1,11 @@
 # Create Categories from Json (Graph)
 
-install
+## Install
 
-git clone https://github.com/dcroid/tencoins.git
+* git clone https://github.com/dcroid/tencoins.git
 
-pip install -f requirements.txt
+* pip install -r requirements.txt
 
-In settings file:
-write your data base settings (host, user, password, db name, port)
+* Edit settings.py, add your db data (host, user, password, db name, port)
+
+* Migrate in db "python manage.py migrate"
